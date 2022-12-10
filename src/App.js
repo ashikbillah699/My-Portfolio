@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutMe from './Component/AboutMe/AboutMe';
+import Footer from './Component/Footer/Footer';
+import MyProject from './Component/MyProject/MyProject';
+import MySkill from './Component/MySkill/MySkill';
+import Navber from './Component/Navber/Navber';
+import Resume from './Component/Resume/Resume';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-black">
+      <Navber></Navber>
+      <AboutMe></AboutMe>
+      <MyProject></MyProject>
+      <Resume></Resume>
+      <MySkill></MySkill>
+      <Footer></Footer>
     </div>
   );
 }
